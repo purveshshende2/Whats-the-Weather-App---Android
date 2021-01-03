@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         DownloadTask task = new DownloadTask();
         try {
             String encodedCityName = URLEncoder.encode(editText.getText().toString(),"UTF-8");
-            task.execute("http://api.openweathermap.org/data/2.5/weather?q="+ encodedCityName + "&appid=131c19198adcb15a35b0ac245b01965c");
+            task.execute("http://api.openweathermap.org/data/2.5/weather?q="+ encodedCityName + "&appid=--");
 
             InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             mgr.hideSoftInputFromWindow(editText.getWindowToken(),0);
